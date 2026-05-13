@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LKZ SENSI | OFFICIAL STORE</title>
+    
+    <!-- Fontes Premium -->
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Poppins:wght@300;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary: #ff0000;
+            --primary-hover: #cc0000;
+            --dark: #0a0a0a;
+            --card-bg: #151515;
+            --text: #ffffff;
+            --gray: #888;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        
+        body { 
+            background-color: var(--dark); 
+            color: var(--text);
+            background-image: radial-gradient(circle at 50% -20%, #440000 0%, var(--dark) 80%);
+            background-attachment: fixed;
+        }
+
+        /* Header Estilo Gamer */
+        header {
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0,0,0,0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid var(--primary);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo { 
+            font-family: 'Black Ops One', cursive; 
+            font-size: 2.5rem; 
+            letter-spacing: 2px;
+            color: var(--text);
+        }
+        .logo span { color: var(--primary); text-shadow: 0 0 15px var(--primary); }
+
+        /* Botões */
+        .btn {
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 4px;
+            font-weight: 900;
+            text-transform: uppercase;
+            transition: 0.4s;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        .btn-main { background: var(--primary); color: white; box-shadow: 0 0 20px rgba(255,0,0,0.4); }
+        .btn-main:hover { background: white; color: var(--primary); transform: translateY(-3px); }
+
+        /* Hero Section */
+        .hero { text-align: center; padding: 100px 5%; }
+        .hero h1 { font-size: clamp(2.5rem, 8vw, 5rem); font-weight: 900; line-height: 0.9; margin-bottom: 20px; }
+        .hero p { color: var(--gray); max-width: 700px; margin: 0 auto 30px; font-size: 1.1rem; }
+
+        /* Sistema de Feedback Profissional */
+        .feedback-section { padding: 80px 5%; max-width: 1000px; margin: 0 auto; }
+        .feedback-card { 
+            background: var(--card-bg); 
+            padding: 40px; 
+            border-radius: 15px; 
+            border: 1px solid #333;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+        }
+
+        .rating-input { display: flex; gap: 10px; margin-bottom: 20px; flex-direction: row-reverse; justify-content: flex-end; }
+        .rating-input input { display: none; }
+        .rating-input label { font-size: 30px; color: #333; cursor: pointer; transition: 0.3s; }
+        .rating-input label:hover, .rating-input label:hover ~ label,
+        .rating-input input:checked ~ label { color: #ffcc00; text-shadow: 0 0 10px #ffcc00; }
+
+        .input-group { margin-bottom: 20px; }
+        input[type="text"], textarea {
+            width: 100%; padding: 15px; background: #000; border: 1px solid #333;
+            color: white; border-radius: 5px; font-size: 1rem; outline: none; transition: 0.3s;
+        }
+        input:focus, textarea:focus { border-color: var(--primary); box-shadow: 0 0 10px rgba(255,0,0,0.2); }
+
+        .comment-list { margin-top: 50px; display: grid; gap: 20px; }
+        .comment-item { 
+            background: #1a1a1a; padding: 25px; border-radius: 10px; 
+            border-left: 5px solid var(--primary); animation: fadeIn 0.5s ease;
+        }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        .comment-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+        .comment-user { font-weight: 900; color: var(--primary); text-transform: uppercase; }
+        .comment-stars { color: #ffcc00; letter-spacing: 2px; }
+
+        footer { text-align: center; padding: 50px; color: var(--gray); border-top: 1px solid #222; }
+
+        @media (max-width: 768px) {
+            header { flex-direction: column; gap: 20px; }
+            .hero h1 { font-size: 3rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">LKZ <span>SENSI</span></div>
+        <a href="https://chat.whatsapp.com/EVZJt9oGUObBBP27UF794E" class="btn" style="background: #25d366; color: white;">
+            <i class="fab fa-whatsapp"></i> GRUPO VIP
+        </a>
+    </header>
+
+    <section class="hero">
+        <p style="color: var(--primary); font-weight: 900; letter-spacing: 3px;">O SEGREDO DOS PROS</p>
+        <h1>MIRA GRUDADA NO <span style="color: var(--primary);">VERMELHO</span></h1>
+        <p>A LKZ SENSI não é apenas uma configuração, é a chave para o seu sucesso. Esqueça tremedeira na mira e comece a amassar hoje.</p>
+        <a href="https://api.whatsapp.com/send?phone=5564992986044&text=salve%20manin%20quero%20comprar%20uma%20sensi%20braba%F0%9F%92%AF" class="btn btn-main">
+            <i class="fa-solid fa-cart-shopping"></i> ADQUIRIR AGORA VIA WHATSAPP
+        </a>
+    </section>
+
+    <section class="feedback-section">
+        <div class="feedback-card">
+            <h2 style="margin-bottom: 30px; font-family: 'Black Ops One';">DEIXE SEU <span style="color:var(--primary)">FEEDBACK</span></h2>
+            
+            <!-- Sistema de Estrelas -->
+            <div class="rating-input">
+                <input type="radio" name="star" id="star5" value="5"><label for="star5">★</label>
+                <input type="radio" name="star" id="star4" value="4"><label for="star4">★</label>
+                <input type="radio" name="star" id="star3" value="3"><label for="star3">★</label>
+                <input type="radio" name="star" id="star2" value="2"><label for="star2">★</label>
+                <input type="radio" name="star" id="star1" value="1"><label for="star1">★</label>
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="nameInput" placeholder="Seu Nick ou Nome">
+            </div>
+            <div class="input-group">
+                <textarea id="msgInput" rows="4" placeholder="Conte como a LKZ SENSI mudou seu jogo..."></textarea>
+            </div>
+            <button class="btn btn-main" style="width: 100%;" onclick="postFeedback()">POSTAR FEEDBACK PROFISSIONAL</button>
+        </div>
+
+        <div class="comment-list" id="commentContainer">
+            <!-- Comentários aparecerão aqui -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="logo" style="font-size: 1.5rem; margin-bottom: 10px;">LKZ <span>SENSI</span></div>
+        <p>© 2026 - Desenvolvido para Lendas. Proibido cópia parcial ou total.</p>
+    </footer>
+
+    <script>
+        // Função para carregar comentários salvos ao abrir o site
+        window.onload = function() {
+            loadComments();
+        };
+
+        function postFeedback() {
+            const name = document.getElementById('nameInput').value;
+            const msg = document.getElementById('msgInput').value;
+            const rating = document.querySelector('input[name="star"]:checked');
+
+            if(!name || !msg || !rating) {
+                alert("Por favor, preencha nome, mensagem e escolha as estrelas!");
+                return;
+            }
+
+            const feedback = {
+                name: name,
+                message: msg,
+                stars: parseInt(rating.value),
+                date: new Date().toLocaleDateString()
+            };
+
+            // Salvar no LocalStorage (Não some ao reiniciar)
+            let comments = JSON.parse(localStorage.getItem('lkz_comments')) || [];
+            comments.unshift(feedback);
+            localStorage.setItem('lkz_comments', JSON.stringify(comments));
+
+            renderComments();
+            
+            // Limpar campos
+            document.getElementById('nameInput').value = "";
+            document.getElementById('msgInput').value = "";
+            document.querySelector('input[name="star"]:checked').checked = false;
+        }
+
+        function loadComments() {
+            // Comentários Fakes iniciais para parecer profissional caso esteja vazio
+            let comments = JSON.parse(localStorage.getItem('lkz_comments'));
+            if(!comments) {
+                comments = [
+                    { name: "BLACK_N444", message: "Melhor sensi que já comprei, a 2X não sai da cabeça!", stars: 5 },
+                    { name: "GHOST_EXIT", message: "Atendimento top, recebi a config em 2 minutos no zap.", stars: 5 }
+                ];
+                localStorage.setItem('lkz_comments', JSON.stringify(comments));
+            }
+            renderComments();
+        }
+
+        function renderComments() {
+            const container = document.getElementById('commentContainer');
+            const comments = JSON.parse(localStorage.getItem('lkz_comments')) || [];
+            
+            container.innerHTML = "";
+
+            comments.forEach(c => {
+                let starsStr = "★".repeat(c.stars) + "☆".repeat(5 - c.stars);
+                container.innerHTML += `
+                    <div class="comment-item">
+                        <div class="comment-header">
+                            <span class="comment-user">${c.name}</span>
+                            <span class="comment-stars">${starsStr}</span>
+                        </div>
+                        <p style="color: #ccc;">${c.message}</p>
+                    </div>
+                `;
+            });
+        }
+    </script>
+</body>
+</html>
